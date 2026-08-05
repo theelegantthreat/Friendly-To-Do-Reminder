@@ -1,0 +1,6 @@
+{
+  "name": "Friendly To Do Reminder",
+  "description": "A friendly home reminder and to-do list application with notes, drawings, and an integrated week/day/month calendar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
