@@ -1,5 +1,7 @@
 # Friendly To-Do Reminder
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 A small, friendly to-do reminder application for tracking tasks and reminders.
 
 ## Features
@@ -25,6 +27,6 @@ Adjust commands according to the project's actual stack.
 Contributions are welcome — please open issues or pull requests.
 
 ## License
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+License: GNU General Public License v3.0 (GPL-3.0). See the LICENSE file for full terms.
 
 Copyright (C) 2026 theelegantthreat
