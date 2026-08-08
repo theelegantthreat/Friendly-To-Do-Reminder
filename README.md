@@ -2,13 +2,15 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-or-later-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
+SPDX-License-Identifier: GPL-3.0-or-later
+
 A small, friendly Android to‑do app that helps you keep track of tasks and sends reminders so nothing slips through the cracks.
 
 Summary
 
 - Platform: Android (Gradle, Android SDK)
 - Language: Java / Kotlin (sources under `app/src/main`)
-- License: GNU GPL v3.0 or later (see `LICENSE`)
+- License: GNU General Public License v3.0 or later (see `LICENSE`)
 
 Quick links
 
@@ -92,7 +94,36 @@ git checkout -b feature/your-feature-name
 
 License
 
-This project is licensed under the GNU General Public License v3.0 or later — see the `LICENSE` file for the full text.
+This project is licensed under the GNU General Public License v3.0 or later ("GPL‑3.0‑or‑later"). See the `LICENSE` file in the repository for the full text.
+
+What this means (short summary):
+
+- You are free to run, study, share, and modify this software under the terms of the GPL.
+- If you distribute binaries (for example, an APK), you must also provide access to the Corresponding Source under the GPL terms (for example by linking to this repository or including source alongside the binaries).
+- Any derivative works distributed must themselves be licensed under GPL‑3.0‑or‑later.
+
+Resources:
+
+- Full license text: https://www.gnu.org/licenses/gpl-3.0.en.html
+- GPL v3 FAQ: https://www.gnu.org/licenses/gpl-faq.en.html
+
+Suggested source file header (add to new/modified source files):
+
+```java
+/*
+ * Friendly To-Do Reminder
+ * Copyright (C) 2026 theelegantthreat
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * See LICENSE for the full text.
+ */
+```
 
 Contributing
 
