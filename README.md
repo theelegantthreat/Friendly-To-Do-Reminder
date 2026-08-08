@@ -14,11 +14,7 @@ A simple, friendly to-do list app that helps you track tasks and sends reminders
 
 ## Tech / Language Composition
 
-This repository contains the source code for the app. The primary languages and frameworks used may include (but are not limited to):
-
-- JavaScript / TypeScript
-- HTML / CSS
-- (Add platform-specific notes here, e.g. React, React Native, Flutter, Node.js) 
+This repository contains the source code for the app. The project is an Android application using Gradle and the Android SDK. Source code is located under `app/src/main` (Java/Kotlin and Android resources).
 
 If you want exact breakdowns of languages used, run a language analysis or check the repository language stats on GitHub.
 
@@ -31,27 +27,53 @@ If you want exact breakdowns of languages used, run a language analysis or check
    cd Friendly-To-Do-Reminder
    ```
 
-2. Install dependencies (example for a Node-based project):
+2. Requirements
 
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+   - Java 11 (or the JDK version specified by the project)
+   - Android SDK (with an emulator or a connected device)
+   - Android Studio (recommended) or Gradle (if you prefer the command line)
 
-3. Run the app (example):
+3. Open and run (recommended - Android Studio)
 
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+   - Open Android Studio and choose "Open an existing project", then select this repository's root.
+   - Let Android Studio download any missing SDK components and Gradle tooling.
+   - Select a device or emulator and click Run (the green ▶️) to build and install the app.
 
-Adjust the commands above to match the project's actual build tooling (e.g., expo, react-native, flutter, etc.).
+4. Build and run from the command line (Gradle)
+
+   - If the repository includes the Gradle wrapper (`gradlew` / `gradlew.bat`), prefer using it:
+
+     ```bash
+     # macOS / Linux
+     ./gradlew assembleDebug
+     ./gradlew installDebug   # builds and installs to a connected device/emulator
+
+     # Windows
+     gradlew.bat assembleDebug
+     gradlew.bat installDebug
+     ```
+
+   - If there is no Gradle wrapper, use your locally installed Gradle (make sure it's compatible with the project):
+
+     ```bash
+     gradle assembleDebug
+     gradle installDebug
+     ```
+
+   - To install the produced APK manually:
+
+     ```bash
+     adb install -r app/build/outputs/apk/debug/app-debug.apk
+     ```
+
+Notes
+
+- If the Gradle wrapper is missing and you prefer a wrapper, open the project in Android Studio and it will generate or configure wrappers as needed.
+- If you hit SDK or build errors, open the project in Android Studio and follow the IDE suggestions to install missing SDK packages or update the Gradle plugin.
 
 ## Usage
 
-- Open the app in your browser or emulator.
+- Open the app on your device or emulator.
 - Create a new task with a title and optional description.
 - Set a due date and a reminder time.
 - Tasks will appear in the main list; tap/click to mark as complete or edit details.
@@ -59,11 +81,12 @@ Adjust the commands above to match the project's actual build tooling (e.g., exp
 ## Development
 
 - Follow the repository's contribution guidelines (see below).
-- Run the linter and tests before opening a PR if applicable:
+- Run the linter and tests before opening a PR if applicable (project-specific commands may vary):
 
   ```bash
-  npm run lint
-  npm test
+  # examples — adjust to your project's tooling
+  ./gradlew lint
+  ./gradlew test
   ```
 
 - Create feature branches from the default branch:
